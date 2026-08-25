@@ -15,4 +15,3 @@ while play:
     if again != "y":
         print("Thank you for playing!")
         play = False
-    continue

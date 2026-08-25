@@ -43,4 +43,3 @@ while play:
     if again != "y":
         print("Thanks for playing!")
         play = False
-    continue
