@@ -48,4 +48,4 @@ if valid_date(month, day) == False:
 
 else:
     date = day_of_year(year, month, day)
-    print(f"This day is corresponds to day {date} of the year.")
+    print(f"This date corresponds to day {date} of the year.")
