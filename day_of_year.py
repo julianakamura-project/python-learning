@@ -34,10 +34,11 @@ def valid_date(month, day):
     return True
 
 def day_of_year(year, month, day):
-    day = 0
-    for i in range(1, month+1):
-        day += days_in_month(year, i)
-    return day
+    date = 0
+    date += day
+    for i in range(1, month):
+        date += days_in_month(year, i)
+    return date
 
 year = int(input("Please enter a year: "))
 month = int(input("Please enter a month (1-12): "))
@@ -48,4 +49,4 @@ if valid_date(month, day) == False:
 
 else:
     date = day_of_year(year, month, day)
-    print(f"This date corresponds to day {date} of the year.")
+    print(f"This date corresponds to day {date} of the year {year}.")
